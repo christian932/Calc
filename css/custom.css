@@ -1,0 +1,185 @@
+	body {
+		margin: 0;
+		background-color: #f8f4ef;
+	}
+	.container {
+		display: flex;
+		flex-direction: column;
+		min-height: 100vh;
+		width: 100%;
+		overflow: hidden;
+	}
+	.left-section {
+		flex: 1.2;
+		background-image: url('images/intro-bg.jpg');
+		background-size: cover;
+		background-position: center;
+		min-height: 50vh;
+	}
+	.right-section {
+		flex: 1;
+		padding: 60px 40px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		background-color: #f8f4ef;
+		text-align: center;
+	}
+	h1 {
+		font-family: 'Cormorant Garamond';
+		font-weight: 400;
+		font-size: 3rem;
+		color: rgb(101, 134, 181);
+		line-height: 3.5rem; 
+		letter-spacing: 5px;
+		margin-bottom: 0rem;
+		text-align: center;
+	}
+	h4 {
+		font-family: 'Cormorant Garamond';
+		font-weight: 400;
+		font-size: 3rem;
+		color: rgb(101, 134, 181);
+		line-height: 2rem; 
+		letter-spacing: 5px;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+	.right-section h2 {
+		font-family: 'Cormorant Garamond';
+		font-weight: 400;
+		font-size: 1.8rem;
+		margin-top: 1.2rem;
+		color: rgb(101, 134, 181);
+		line-height: 1.2; 
+		letter-spacing: 5px;
+        margin-bottom: 2px;
+	}
+	.right-section p {
+		font-family: 'Circular';
+		font-weight: 400;
+		font-size: 1.25rem;
+		line-height: 1.4;
+		color: #777777;
+        margin-bottom: -.75rem;
+	}
+    #bottomofms {
+		margin-bottom: 1rem;
+	}
+
+	#bottomofsection {
+		margin-bottom: 2rem;
+	}
+
+	.buttons {
+		display: grid;
+		justify-items: center;
+		grid-template-columns: repeat(2, 200px);
+		flex-wrap: wrap;
+		gap: 20px;
+		justify-content: center;
+	}
+	.rsvp {
+		display: grid;
+		justify-items: center;
+		flex-wrap: wrap;
+		gap: 20px;
+		justify-content: center;
+		margin-top: 20px;
+	}
+	.rsvp .button {
+		display: grid;
+		justify-items: center;
+		flex-wrap: wrap;
+		gap: 20px;
+		justify-content: center;
+		background-color: rgb(107, 119, 137);
+		color: rgb(255, 255, 255);
+	}
+	.button, .buttons .button, .buttons a.button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 15px 30px;
+        border: 0.1rem solid #aaa;
+        border-radius: 30px;
+        font-weight: 500;
+        font-size: 1rem;
+        cursor: pointer;
+        background-color: #fdfcf9;
+        color: #555555;
+        transition: all 0.3s ease;
+        text-align: center;
+        width: 180px;
+        line-height: 1.2;
+        text-decoration: none;
+        font-family: 'Circular', sans-serif;
+        box-sizing: border-box;
+	}
+	.button:hover, .buttons a:hover {
+		background-color: #f0ede9;
+	}
+	@media (min-width: 900px) {
+		.container {
+			flex-direction: row;
+		}
+		.left-section {
+			min-height: 100vh;
+			flex: 1.2;
+		}
+		.right-section {
+			flex: 1; 
+			padding: 80px 60px;
+		}
+	}
+
+	@media (max-width: 900px) {
+		.right-section {
+			padding: 1rem 40px;
+		}
+	}
+
+	@media (max-width: 603px) {
+		.buttons {
+			grid-template-columns: repeat(2, 160px); /* Smaller button width */
+			gap: 15px; /* Tighter spacing */
+		}
+		
+		.button, .buttons .button, .buttons a.button {
+			width: 160px;
+		}
+	}
+
+    
+
+
+
+
+
+    /* Back Button Styles */
+    .back-button {
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        z-index: 1000;
+    }
+
+    .back-link {
+        display: inline-flex;
+        align-items: center;
+        padding: 10px 20px;
+        border-radius: 30px;
+        font-weight: 500;
+        font-size: 0.9rem;
+        color: #555555;
+        background-color: #fdfcf9;
+        border: 2px solid #aaa;
+        text-decoration: none;
+        transition: all 0.3s ease;
+    }
+
+    .back-link:hover {
+        background-color: #f0ede9;
+        color: #333;
+        border-color: #888;
+    }

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Wedding Party</title>
+  <link rel="stylesheet" href="../css/custom.css">   
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+
+    .entouragecontainer {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px 4rem;
+        background-color: #ffffff;
+        font-family: 'Cormorant Garamond', serif;
+        color: #333333;
+    }
+    
+    /* Grid layout for party members */
+    .party-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(250px, 1fr));
+        gap: 40px;
+        
+    }
+    
+    /* Individual member card */
+    .member {
+        background-color: #f9f9f9;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        text-align: center;
+        border: 1px solid #ddd;
+    }
+    
+    /* Member name */
+    .member h2 {
+        font-size: 1.5rem;
+        margin: 0;
+        color: rgb(101, 134, 181);
+    }
+    
+    /* Member role/description */
+    .member p {
+        font-size: 1rem;
+        margin: 8px 0 0;
+        color: #777777;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 625px) {
+        .party-grid {
+            grid-template-columns: 1fr; /* Stacks into a single column */
+            gap: 20px; /* Adjusts spacing for smaller screens */
+        }
+
+        .member h2 {
+            font-size: 1.8rem; /* Slightly larger font for small screens */
+        }
+
+        .member p {
+            font-size: 1.1rem; /* Slightly larger font for better readability */
+        }
+    }
+
+  </style>
+</head>
+
+<body>
+
+    <div class="back-button">
+        <a href="../index.html" class="back-link">&larr;</a>
+    </div>
+
+
+  <div class="entouragecontainer">
+    <h4>Entourage</h4>
+    <div class="party-grid">
+      <div class="member">
+        <h2>IDK</h2>
+        <p>Bride</p>
+      </div>
+      <div class="member">
+        <h2>Christian Farnsworth</h2>
+        <p>Groom</p>
+      </div>
+      <div class="member">
+        <h2>IDK</h2>
+        <p>Maid of Honor</p>
+      </div>
+      <div class="member">
+        <h2>Cameron Farnsworth</h2>
+        <p>Best Man<br/>Brother of the Groom</p>
+      </div>
+      <div class="member">
+        <h2>IDK</h2>
+        <p>Bridesmaid</p>
+      </div>
+      <div class="member">
+        <h2>Danny Steadman</h2>
+        <p>Groomsman<br/>Cousin of the Groom</p>
+      </div>
+      <div class="member">
+        <h2>IDK</h2>
+        <p>Bridesmaid</p>
+      </div>
+      <div class="member">
+        <h2>Emmett Steadman</h2>
+        <p>Groomsman<br/>Cousin of the Groom</p>
+      </div>
+      <div class="member">
+        <h2>IDK</h2>
+        <p>Bridesmaid</p>
+      </div>
+      <div class="member">
+        <h2>Luke Steadman</h2>
+        <p>Groomsman<br/>Cousin of the Groom</p>
+      </div>
+      <div class="member">
+        <h2>IDK</h2>
+        <p>Bridesmaid</p>
+      </div>
+      <div class="member">
+        <h2>Chris Barbusca</h2>
+        <p>Groomsman</p>
+      </div>
+      <div class="member">
+        <h2>IDK</h2>
+        <p>Flower Girl</p>
+      </div>
+      <div class="member">
+        <h2>IDK</h2>
+        <p>Ring Bearer</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

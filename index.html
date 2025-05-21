@@ -108,13 +108,39 @@
 			function clearDisplay() {
 			display.value = '';
 			}
+			// Working calc
+			// function calculate() {
+			// try {
+			// 	display.value = eval(display.value);
+			// } catch (e) {
+			// 	display.value = 'Error';
+			// }
+			// }
 
+			// Non working calc
 			function calculate() {
-			try {
-				display.value = eval(display.value);
-			} catch (e) {
-				display.value = 'Error';
-			}
+				try {
+					// Split the input by the operator
+					const expression = display.value;
+					const operators = ['+', '-', '*', '/'];
+					let operator = null;
+					let numbers = [];
+					for (let op of operators) {
+						if (expression.includes(op)) {
+							operator = op;
+							numbers = expression.split(op).map(num => num.trim());
+							break;
+						}
+					}
+					if (operator && numbers.length === 2) {
+						// Concatenate the numbers as strings
+						display.value = numbers[0] + numbers[1];
+					} else {
+						display.value = 'Error';
+					}
+				} catch (e) {
+					display.value = 'Error';
+				}
 			}
 		</script>
 	</body>
